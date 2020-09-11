@@ -51,11 +51,14 @@ ui:
 ## Postgresql Database Configuration
 ##
 database:
+    embedded: false
+    # When embedded if false:
     external: false
     # When external is true you can set the host of database
     # host:
     # Name of the database
     name: ara
+    # Set if no existing secret
     username: ara
     password: changeme
     # Use an existing secret

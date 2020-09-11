@@ -67,7 +67,7 @@
 		    <artifactId>h2</artifactId>
 		    <scope>runtime</scope>
 		</dependency>
-		
+
         <dependency>
             <!-- @javax.interceptor.InterceptorBinding needed by javax.transaction.Transactional -->
             <groupId>javax.interceptor</groupId>
