@@ -25,7 +25,7 @@ api:
         #  cpu: 100m
         #  memory: 128Mi
     port: 8080
-    dbMode: create-drop
+    dbMode: update
     # Used to redirect on the app by email service among others
     appUrl: ara.test
 
@@ -51,7 +51,7 @@ ui:
 ## Postgresql Database Configuration
 ##
 database:
-    embedded: false
+    embedded: true
     type: h2 # mysql is also suported when embedded is false
     # When embedded if false you can provide default cluster database or external database:
     external: false

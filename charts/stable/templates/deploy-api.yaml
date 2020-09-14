@@ -31,6 +31,11 @@ spec:
         env:
         - name: SERVER_PORT
           value: "{{ .Values.api.port }}"
+        - name: DATABASE_TYPE
+          valueFrom:
+            configMapKeyRef:
+              name: {{ include "ara.configmap.name" . }}
+              key: database_type
         - name: DATABASE_URL
           valueFrom:
             configMapKeyRef:
@@ -51,13 +56,11 @@ spec:
             configMapKeyRef:
               name: {{ include "ara.configmap.name" . }}
               key: app_url
-        {{- if .Values.api.dbMode }}
         - name: DATA_DB_MODE
           valueFrom:
             configMapKeyRef:
                 name: {{ include "ara.configmap.name" . }}
                 key: db_mode
-        {{- end }}
         ports:
         - containerPort: {{ .Values.api.port }}
           name: http-port
