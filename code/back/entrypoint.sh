@@ -9,6 +9,7 @@ case $DATABASE_TYPE in
         ;;
     h2)
         echo "ARA configured with his h2 embedded database"
+        DATABASE_PARAMS="${DATABASE_PARAMS}-Dspring.datasource.url=jdbc:h2:$DATABASE_URL;DB_CLOSE_DELAY=-1 "
         ;;
     *)
         echo "ERROR: please specify a DATABASE_TYPE env var with the target database type"
