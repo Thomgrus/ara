@@ -52,7 +52,8 @@ ui:
 ##
 database:
     embedded: true
-    type: h2 # mysql is also suported when embedded is false
+    # type mysql is suported when embedded is false
+    type: h2
     # When embedded if false you can provide default cluster database or external database:
     external: false
     # When external is true you can set the host of database
