@@ -2,6 +2,28 @@ apiVersion: v1
 entries:
   ara:
   - apiVersion: v2
+    created: "2020-09-18T13:35:18.241873845Z"
+    description: |
+      ARA helps you to fight against regressions by letting it preanalyze your non-regression tests runs,
+      tracks and follows problems, keep their history, and even break your CI build if quality isn't
+      met.
+    digest: 2bd6632c812d42528c7cfe7b3cc516e0f69f949e6bc5f11d24853f75fbf3261d
+    home: https://github.com/Decathlon/ara
+    icon: https://raw.githubusercontent.com/Thomgrus/ara/feat/ara-migration-merged/code/front/src/assets/favicon.png
+    keywords:
+    - ara
+    - analyser
+    - tests aggregator
+    maintainers:
+    - email: thomas.gruson@protonmail.com
+      name: Thomgrus
+    name: ara
+    sources:
+    - https://github.com/Decathlon/ara
+    urls:
+    - https://github.com/Thomgrus/ara/releases/download/ara-6.1.7/ara-6.1.7.tgz
+    version: 6.1.7
+  - apiVersion: v2
     created: "2020-09-18T13:08:54.551939709Z"
     description: |
       ARA helps you to fight against regressions by letting it preanalyze your non-regression tests runs,
